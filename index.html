@@ -209,6 +209,64 @@
 
   .about-text p{ margin-bottom:16px; color:var(--ink-soft); max-width:64ch; }
 
+  /* ---------- Works ---------- */
+  .works-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+  }
+
+  .works-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+
+  .works-card h3{
+    font-size:16px;
+    margin-bottom:8px;
+    color:var(--ink);
+  }
+
+  .works-card p{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin-bottom:16px;
+  }
+
+  .works-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-bottom:16px;
+    list-style:none;
+  }
+
+  .works-tags li{
+    font-size:12px;
+    background:var(--bg-alt);
+    color:var(--ink-soft);
+    padding:3px 10px;
+    border-radius:12px;
+  }
+
+  .works-link{
+    font-size:13px;
+    font-weight:700;
+    color:var(--accent);
+    display:inline-flex;
+    align-items:center;
+    gap:4px;
+  }
+
+  .works-link:hover{
+    text-decoration:underline;
+  }
+
   /* ---------- Skills ---------- */
   .skill-grid{
     display:grid;
@@ -354,7 +412,7 @@
     .hero-inner{ flex-direction:column; text-align:center; }
     .hero p.lead{ max-width:100%; }
     .hero-links{ justify-content:center; }
-    .skill-grid, .eng-grid{ grid-template-columns:1fr; }
+    .works-grid, .skill-grid, .eng-grid{ grid-template-columns:1fr; }
   }
 
   @media (prefers-reduced-motion: reduce){
@@ -374,6 +432,7 @@
     <nav>
       <ul id="nav-list">
         <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#security">Security</a></li>
         <li><a href="#english">English</a></li>
@@ -389,9 +448,7 @@
   <section class="hero">
     <div class="wrap hero-inner">
       <div class="avatar">
-        <!-- 実際の顔写真に差し替える場合は、この<svg>ごと
-             <img src="photo.jpg"> に置き換えてください -->
-       <img src="iconbee12.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+        <img src="iconbee12.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" alt="yuto H">
       </div>
       <div>
         <p class="role">セキュリティエンジニア志望 / 経済学部</p>
@@ -413,7 +470,7 @@
       <div class="section-head"><span class="bar"></span><h2>About</h2></div>
       <div class="about-text">
         <p>
-          こんにちは　現在都内で大学生をしております。趣味は自分の知的好奇心を満たせることで、古本屋で見つけた本や、スマホ無しで旅をしたり、将棋をしたりすることです。
+          こんにちは 現在都内で大学生をしております。趣味は自分の知的好奇心を満たせることで、古本屋で見つけた本や、スマホ無しで旅をしたり、将棋をしたりすることです。
           最近ハマっているのは朝食にパン、チーズ、レタス、ベーコン、そして目玉焼きを乗せるサンドウィッチとコーヒーを撮ることです。
         </p>
         <p>
@@ -422,8 +479,44 @@
         </p>
         <p>
           私の強みは知的好奇心です。自分が興味をもったこと、思い立ったことにはすぐに着手します。ただ無計画にやるのではなくゴールに対して逆算していくことで自分の今の課題を見つけて解決していくのが強みの一つです。
-          また私の大事にしていることは、楽しむことです！　旅先でのトラブルも楽しめる人間です。
+          また私の大事にしていることは、楽しむことです！ 旅先でのトラブルも楽しめる人間です。
         </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Works ===== -->
+  <section id="works">
+    <div class="wrap">
+      <div class="section-head"><span class="bar"></span><h2>Works</h2></div>
+      <div class="works-grid">
+
+        <div class="works-card">
+          <div>
+            <h3>個人ポートフォリオサイト</h3>
+            <p>レスポンシブデザインに対応したWEBポートフォリオ。HTML/CSSを用いてシンプルかつアクセシビリティを意識して構築。</p>
+            <ul class="works-tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>GitHub Pages</li>
+            </ul>
+          </div>
+          <a href="#" class="works-link">GitHubで見る &rarr;</a>
+        </div>
+
+        <div class="works-card">
+          <div>
+            <h3>災害リスクSWOT分析プレゼン</h3>
+            <p>大学の講義にて、過去の災害データを基にHazard/Vulnerability/Exposureの観点から構造的な課題と対策を提案。</p>
+            <ul class="works-tags">
+              <li>災害経済学</li>
+              <li>SWOT分析</li>
+              <li>Presentation</li>
+            </ul>
+          </div>
+          <span style="font-size:12px; color:var(--ink-soft);">※大学講義発表成果物</span>
+        </div>
+
       </div>
     </div>
   </section>
@@ -457,7 +550,7 @@
           <ul>
             <li>HTML / CSS</li>
             <li>Networking</li>
-            <li>NCybersecurity</li>
+            <li>Cybersecurity</li>
           </ul>
         </div>
       </div>
