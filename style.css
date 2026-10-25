@@ -1,4 +1,4 @@
-<style>
+
   :root{
     --bg:#F7F8F6;
     --bg-alt:#EFF2F0;
@@ -409,4 +409,3 @@
   @media (prefers-reduced-motion: reduce){
     html{ scroll-behavior:auto; }
   }
-</style>
