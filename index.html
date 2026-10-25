@@ -40,7 +40,7 @@
         <img src="iconbee12.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" alt="yuto H">
       </div>
       <div>
-        <p class="role">セキュリティエンジニア志望 / 経済学部</p>
+        <p class="role">セキュリティ分野志望（脆弱性診断・ビジネス職) / 経済学部</p>
         <h1>はじめまして</h1>
         <p class="lead">
           大学で経済学を学び、現在はサイバーセキュリティに興味を持ち、Tryhackmeを通じて学習中です。
@@ -59,7 +59,7 @@
       <div class="section-head"><span class="bar"></span><h2>About</h2></div>
       <div class="about-text">
         <p>
-          初めまして もんじです。現在都内で大学生をしております。趣味は新しいことに挑戦することで、知らないところに行ってみたいり、古本屋で見つけた本や、スマホ無しで旅をしたり、将棋をしたりすることです。
+          初めまして もんじです。現在都内で大学生をしております。趣味は新しいことに挑戦することで、知らないところに行ってみたり、古本屋で見つけた本や、スマホ無しで旅をしたり、将棋をしたりすることです。
           最近ハマっているのは朝食にパン、チーズ、レタス、ベーコン、そして目玉焼きを乗せるサンドウィッチとコーヒーをいただくことです。
         </p>
         <p>
@@ -87,6 +87,9 @@
             <ul class="works-tags">
               <li>HTML</li>
               <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Cloudflare</li>
+              <li>GitHub</li>
             </ul>
             </ul>
       <!-- ここを追加 -->
@@ -125,12 +128,11 @@
           <h3>セキュリティ診断</h3>
           <ul>
             <li>Burp Suite（学習中）</li>
-            <li>Sqlmap（学習中）</li>
             <li>Web脆弱性診断基礎</li>
-            <li>MDN HTTP Observatory</li>
-            <li>Security Headers</li>
-            <li>SSL Labs</li>
-            <li>OWASP ZAP</li>
+            <li>MDN HTTP Observatory(使用経験あり）</li>
+            <li>Security Headers(使用経験あり）</li>
+            <li>SSL Labs(使用経験あり）</li>
+            <li>OWASP ZAP(使用経験あり）</li>
           </ul>
         </div>
 
@@ -148,9 +150,9 @@
         <div class="skill-card">
           <h3>Web / インフラ</h3>
           <ul>
-            <li>Github</li>
+            <li>GitHub</li>
             <li>Cloudflare</li>
-            <li>Vscode</li>
+            <li>Vs code</li>
           </ul>
         </div>
       </div>
@@ -165,7 +167,16 @@
         <div class="sec-item">
           <h3>学習内容</h3>
           <p>Tryhackmeにて、Cyber Security 101を完走</p>
-          <p>自身のPharama-naviに対して脆弱性診断を実施</p>
+          <h3>自サイトのセキュリティ診断と改善</h3>
+          <p>自分が運営するWebsite(pharama-navi.com)を、公開ツールで診断し、修正して再確認しました。診断は、自分が運営するサイトのみを対象としています。</p>
+          <p>・MDN HTTP Observatory:B(70点)　→A+ (125点) </p>
+          <p>OWASP ZAPのアラート１０件　→　３件</p>
+          <p>Security Headers : A+</p>
+          <p>主な発見と対応</p>
+          <p>デプロイのログを読んで、.gitディレクトリが公開状態になっていることに気づき、修正</p>
+          <p>緩かったCSPを、段階的に強化（試験運用　→　外部ファイルへの分離　→　本番適応）</p>
+          <p>無効になっていたHSTSを１２か月に設定</p>
+          <p>ツールのスコアは設定面の評価で、安全性の保障ではありません</p>
         </div>
       </div>
     </div>
